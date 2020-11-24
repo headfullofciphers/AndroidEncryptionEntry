@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etPlain"
+        android:layout_width="370dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="PlainText"
+        android:ems="10"
+        android:hint="PlainText"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="370dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/etPlain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:contentDescription="Password"
+        android:hint="Password"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etEnc"
+        android:layout_width="370dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/etPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Encrypted Text"
+        android:ems="10"
+        android:hint="Encrypted Text"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btEnc"
+        android:layout_width="135dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/etEnc"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="Encrypt" />
+
+    <Button
+        android:id="@+id/btDec"
+        android:layout_width="135dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/etEnc"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/btEnc"
+        android:text="Decrytp" />
+    <TextView
+        android:id="@+id/tvOp"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/btEnc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Last operation:" />
+
+
+    <TextView
+        android:id="@+id/tvKey"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tvOp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Key:" />
+
+    <TextView
+        android:id="@+id/tvEncHex"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tvKey"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Enc Hex:" />
+
+
+</RelativeLayout>
